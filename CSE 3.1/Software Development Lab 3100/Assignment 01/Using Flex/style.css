@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #F2F2F2;
+
+}
+
+/* STARTING 1ST DIV */
+
+.container1{
+    margin: 10px 0px 0px 0px;
+    text-align: center;
+    font-family: 'Roboto Condensed', sans-serif;
+
+}
+ .container1 :hover{
+    
+    text-shadow: 6px 6px 6px rgb(228, 93, 122);
+    
+   
+}
+
+/* STARTING 2ND DIV */
+
+.container2{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 20px 0px 0px 0px;
+    justify-content:space-around;
+
+}
+
+
+.div1  .card_body1{
+    text-align: center;
+    background-color: #FFFFFF;
+}
+.div2 .card_body2{
+    text-align: center;
+    background-color: #FFFFFF;
+}
+.div3 .card_body3{
+    text-align: center;
+   background-color: #FFFFFF;
+}
+
+.container2 .div1 .images1{
+    height: 250px;
+
+    
+}
+.container2 .div1 .images1:hover{
+  
+    box-shadow: 6px 10px 10px rgb(90, 221, 221);
+    transform: rotate(355deg);
+   
+    
+}
+
+
+.container2 .div2 .images2{
+    height: 250px;
+}
+.container2 .div2 .images2:hover{
+   
+    box-shadow: 6px 10px 10px rgb(90, 221, 221);
+    transform: rotate(355deg);
+}
+
+.container2 .div3 .images3{
+    height: 250px;
+
+}
+.container2 .div3 .images3:hover{
+    
+    box-shadow: 6px 10px 10px rgb(90, 221, 221);
+    transform: rotate(355deg);
+}
+
+/* STARTING 3RD DIV */
+
+.container3{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 20px;
+    justify-content: space-around;
+}
+
+
+.div4  .card_body4{
+    text-align: center;
+    background-color: #FFFFFF;
+}
+
+.div5 .card_body5{
+    text-align: center;
+    background-color: #FFFFFF;
+}
+
+.div6 .card_body6{
+    text-align: center;
+    background-color: #FFFFFF;
+}
+
+.container3 .div4 .images4{
+    height: 250px;
+    
+    
+}
+
+.container3 .div4 .images4:hover{
+   
+    box-shadow: 6px 10px 10px rgb(90, 221, 221);
+    transform: rotate(355deg);
+}
+
+
+ 
+.container3 .div5 .images5{
+    height: 250px;
+    
+}
+.container3 .div5 .images5:hover{
+    
+    box-shadow: 6px 10px 10px rgb(90, 221, 221);
+    transform: rotate(355deg);
+
+}
+
+.container3 .div6 .images6{
+    height: 250px;
+  
+}
+.container3 .div6 .images6:hover{
+
+    box-shadow: 6px 10px 10px rgb(90, 221, 221);
+    transform: rotate(355deg);    
+}
+
+
