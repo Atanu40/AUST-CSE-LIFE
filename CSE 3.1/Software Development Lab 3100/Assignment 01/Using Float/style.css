@@ -1,0 +1,196 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: #F2F2F2;
+}
+
+.container1{
+    margin-top: 10px;
+    text-align: center;
+    font-size: 30px;
+}
+.container1 :hover{
+    
+    text-shadow: 6px 6px 6px rgb(228, 93, 122);
+    
+   
+}
+
+.container2 .div1{
+    float: left;
+    margin-left: 8%;
+    margin-right: 4%;
+    margin-top: 4%;
+    margin-bottom: 4%;
+    border-style: solid;
+    border-color: rgb(205, 205, 205);
+}
+.div1 .card1 .c1_title1{
+    text-align: center;
+    font-family: 'Big Shoulders Stencil Text', cursive;
+    font-size: 20px;
+    font-weight: 600;
+}
+.div1 .card1 .c1_text1{
+    text-align: center;
+    font-family: 'Big Shoulders Stencil Text', cursive;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.container2 .div1 .images1:hover{
+     
+    box-shadow: 6px 10px 10px rgb(90, 221, 221);
+    transform: rotate(355deg);
+
+}
+
+
+.container2 .div2{
+    float: left;
+    margin-left: 4%;
+    margin-right: 4%;
+    margin-top: 4%;
+    margin-bottom: 4%;
+    border-style: solid;
+    border-color: rgb(205, 205, 205);
+}
+.div2 .card2 .c2_title2{
+    text-align: center;
+    font-family: 'Big Shoulders Stencil Text', cursive;
+    font-size: 20px;
+    font-weight: 600;
+}
+.div2 .card2 .c2_text2{
+    text-align: center;
+    font-family: 'Big Shoulders Stencil Text', cursive;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.container2 .div2 .images2:hover{
+     
+    box-shadow: 6px 10px 10px rgb(90, 221, 221);
+    transform: rotate(355deg);
+
+}
+
+
+.container2 .div3{
+    float: left;
+    margin-left: 4%;
+    margin-right: 4%;
+    margin-top: 4%;
+    margin-bottom: 4%;
+    border-style: solid;
+    border-color: rgb(205, 205, 205);
+}
+.div3 .card3 .c3_title3{
+    text-align: center;
+    font-family: 'Big Shoulders Stencil Text', cursive;
+    font-size: 20px;
+    font-weight: 600;
+}
+.div3 .card3 .c3_text3{
+    text-align: center;
+    font-family: 'Big Shoulders Stencil Text', cursive;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.container2 .div3 .images3:hover{
+     
+    box-shadow: 6px 10px 10px rgb(90, 221, 221);
+    transform: rotate(355deg);
+
+}
+
+.container3 .div4{
+    float: left;
+    margin-left: 8%;
+    margin-right: 4%;
+    margin-top: 4%;
+    margin-bottom: 4%;
+    border-style: solid;
+    border-color: rgb(205, 205, 205);
+}
+.div4 .card4 .c4_title4{
+    text-align: center;
+    font-family: 'Big Shoulders Stencil Text', cursive;
+    font-size: 20px;
+    font-weight: 600;
+}
+.div4 .card4 .c4_text4{
+    text-align: center;
+    font-family: 'Big Shoulders Stencil Text', cursive;
+    font-size: 15px;
+    font-weight: 300;
+}
+.container3 .div4 .images4:hover{
+    
+    box-shadow: 6px 10px 10px rgb(90, 221, 221);
+    transform: rotate(355deg);
+
+}
+
+
+.container3 .div5{
+    float: left;
+    margin-left: 4%;
+    margin-right: 4%;
+    margin-top: 4%;
+    margin-bottom: 4%;
+    border-style: solid;
+    border-color: rgb(205, 205, 205);
+}
+.div5 .card5 .c5_title5{
+    text-align: center;
+    font-family: 'Big Shoulders Stencil Text', cursive;
+    font-size: 20px;
+    font-weight: 600;
+}
+.div5 .card5 .c5_text5{
+    text-align: center;
+    font-family: 'Big Shoulders Stencil Text', cursive;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.container3 .div5 .images5:hover{
+     
+    box-shadow: 6px 10px 10px rgb(90, 221, 221);
+    transform: rotate(355deg);
+
+}
+
+
+.container3 .div6{
+    float: left;
+    margin-left: 4%;
+    margin-right: 4%;
+    margin-top: 4%;
+    margin-bottom: 4%;
+    border-style: solid;
+    border-color: rgb(205, 205, 205);
+}
+.div6 .card6 .c6_title6{
+    text-align: center;
+    font-family: 'Big Shoulders Stencil Text', cursive;
+    font-size: 20px;
+    font-weight: 600;
+}
+.div6 .card6 .c6_text6{
+    text-align: center;
+    font-family: 'Big Shoulders Stencil Text', cursive;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.container3 .div6 .images6:hover{
+      
+    box-shadow: 6px 10px 10px rgb(90, 221, 221);
+    transform: rotate(355deg);
+
+}
