@@ -1,0 +1,38 @@
+C:\Users\mh200\source\repos\Assignment001\Assignment001\bin\Debug\net5.0-windows\Assignment001.exe
+C:\Users\mh200\source\repos\Assignment001\Assignment001\bin\Debug\net5.0-windows\Assignment001.deps.json
+C:\Users\mh200\source\repos\Assignment001\Assignment001\bin\Debug\net5.0-windows\Assignment001.runtimeconfig.json
+C:\Users\mh200\source\repos\Assignment001\Assignment001\bin\Debug\net5.0-windows\Assignment001.runtimeconfig.dev.json
+C:\Users\mh200\source\repos\Assignment001\Assignment001\bin\Debug\net5.0-windows\Assignment001.dll
+C:\Users\mh200\source\repos\Assignment001\Assignment001\bin\Debug\net5.0-windows\ref\Assignment001.dll
+C:\Users\mh200\source\repos\Assignment001\Assignment001\bin\Debug\net5.0-windows\Assignment001.pdb
+C:\Users\mh200\source\repos\Assignment001\Assignment001\obj\Debug\net5.0-windows\Assignment001.csproj.AssemblyReference.cache
+C:\Users\mh200\source\repos\Assignment001\Assignment001\obj\Debug\net5.0-windows\Assignment001.Form1.resources
+C:\Users\mh200\source\repos\Assignment001\Assignment001\obj\Debug\net5.0-windows\Assignment001.csproj.GenerateResource.cache
+C:\Users\mh200\source\repos\Assignment001\Assignment001\obj\Debug\net5.0-windows\Assignment001.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mh200\source\repos\Assignment001\Assignment001\obj\Debug\net5.0-windows\Assignment001.AssemblyInfoInputs.cache
+C:\Users\mh200\source\repos\Assignment001\Assignment001\obj\Debug\net5.0-windows\Assignment001.AssemblyInfo.cs
+C:\Users\mh200\source\repos\Assignment001\Assignment001\obj\Debug\net5.0-windows\Assignment001.csproj.CoreCompileInputs.cache
+C:\Users\mh200\source\repos\Assignment001\Assignment001\obj\Debug\net5.0-windows\Assignment001.dll
+C:\Users\mh200\source\repos\Assignment001\Assignment001\obj\Debug\net5.0-windows\ref\Assignment001.dll
+C:\Users\mh200\source\repos\Assignment001\Assignment001\obj\Debug\net5.0-windows\Assignment001.pdb
+C:\Users\mh200\source\repos\Assignment001\Assignment001\obj\Debug\net5.0-windows\Assignment001.genruntimeconfig.cache
+C:\Users\mh200\source\repos\Assignment001\Assignment001\obj\Debug\net5.0-windows\Assignment001.Form2.resources
+E:\Assignment02\windows form\Assignment001\bin\Debug\net5.0-windows\Assignment001.exe
+E:\Assignment02\windows form\Assignment001\bin\Debug\net5.0-windows\Assignment001.deps.json
+E:\Assignment02\windows form\Assignment001\bin\Debug\net5.0-windows\Assignment001.runtimeconfig.json
+E:\Assignment02\windows form\Assignment001\bin\Debug\net5.0-windows\Assignment001.runtimeconfig.dev.json
+E:\Assignment02\windows form\Assignment001\bin\Debug\net5.0-windows\Assignment001.dll
+E:\Assignment02\windows form\Assignment001\bin\Debug\net5.0-windows\ref\Assignment001.dll
+E:\Assignment02\windows form\Assignment001\bin\Debug\net5.0-windows\Assignment001.pdb
+E:\Assignment02\windows form\Assignment001\obj\Debug\net5.0-windows\Assignment001.csproj.AssemblyReference.cache
+E:\Assignment02\windows form\Assignment001\obj\Debug\net5.0-windows\Assignment001.Form1.resources
+E:\Assignment02\windows form\Assignment001\obj\Debug\net5.0-windows\Assignment001.Form2.resources
+E:\Assignment02\windows form\Assignment001\obj\Debug\net5.0-windows\Assignment001.csproj.GenerateResource.cache
+E:\Assignment02\windows form\Assignment001\obj\Debug\net5.0-windows\Assignment001.GeneratedMSBuildEditorConfig.editorconfig
+E:\Assignment02\windows form\Assignment001\obj\Debug\net5.0-windows\Assignment001.AssemblyInfoInputs.cache
+E:\Assignment02\windows form\Assignment001\obj\Debug\net5.0-windows\Assignment001.AssemblyInfo.cs
+E:\Assignment02\windows form\Assignment001\obj\Debug\net5.0-windows\Assignment001.csproj.CoreCompileInputs.cache
+E:\Assignment02\windows form\Assignment001\obj\Debug\net5.0-windows\Assignment001.dll
+E:\Assignment02\windows form\Assignment001\obj\Debug\net5.0-windows\ref\Assignment001.dll
+E:\Assignment02\windows form\Assignment001\obj\Debug\net5.0-windows\Assignment001.pdb
+E:\Assignment02\windows form\Assignment001\obj\Debug\net5.0-windows\Assignment001.genruntimeconfig.cache
