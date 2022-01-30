@@ -1,0 +1,7 @@
+G:\CODE\C# CODE\Offline_1\Offline_1\bin\Debug\Offline_1.exe.config
+G:\CODE\C# CODE\Offline_1\Offline_1\bin\Debug\Offline_1.exe
+G:\CODE\C# CODE\Offline_1\Offline_1\bin\Debug\Offline_1.pdb
+G:\CODE\C# CODE\Offline_1\Offline_1\obj\Debug\Offline_1.csproj.AssemblyReference.cache
+G:\CODE\C# CODE\Offline_1\Offline_1\obj\Debug\Offline_1.csproj.CoreCompileInputs.cache
+G:\CODE\C# CODE\Offline_1\Offline_1\obj\Debug\Offline_1.exe
+G:\CODE\C# CODE\Offline_1\Offline_1\obj\Debug\Offline_1.pdb
