@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment 2: Part B</title>
+</head>
+
+<canvas id="myCanvas" style="border: 1px solid #000000" , width="600" height="600"></canvas>
+
+<script>
+    var canvas = document.getElementById("myCanvas");
+    document.addEventListener('keydown', onKeyUp, false);
+    var gl = canvas.getContext("webgl");
+
+    var vertexShaderSource =
+        `attribute vec3 a_coords;
+	    attribute vec3 a_colors;
+	    uniform float u_shift;
+        uniform float y_shift;
+		varying vec3 v_color;
+        
+		void main() {
+            gl_Position = vec4(a_coords.x + u_shift, a_coords.y + y_shift, a_coords.z, 1.0);
+			v_color = a_colors;
+        }`;
+
+    var fragmentShaderSource =
+        `precision mediump float;
+        varying vec3 v_color;
+        void main() {
+            gl_FragColor = vec4(v_color, 1.0);
+        }`;
+
+    var vsh = gl.createShader(gl.VERTEX_SHADER);
+    gl.shaderSource(vsh, vertexShaderSource);
+    gl.compileShader(vsh);
+
+    var fsh = gl.createShader(gl.FRAGMENT_SHADER);
+    gl.shaderSource(fsh, fragmentShaderSource);
+    gl.compileShader(fsh);
+
+    var prog = gl.createProgram();
+
+    gl.attachShader(prog, vsh);
+    gl.attachShader(prog, fsh);
+    gl.linkProgram(prog);
+    gl.useProgram(prog);
+
+    var a_coords_location = gl.getAttribLocation(prog, "a_coords");
+
+    var coords = new Float32Array([
+        -0.8, 0.0, 0.0, //a
+      -0.8, -0.2, 0.0, //b
+      -0.6, 0.0, 0.0, //c
+
+      -0.8, -0.2, 0.0, //b
+      -0.6, 0.0, 0.0, //c
+      -0.6, -0.2, 0.0, //d
+
+      -0.6, 0.0, 0.0, //c
+      -0.6, -0.2, 0.0, //d
+      -0.4, 0.0, 0.0, //e
+
+      -0.6, -0.2, 0.0, //d
+      -0.4, 0.0, 0.0, //e
+      -0.4, -0.2, 0.0, //f
+
+      -0.4, 0.0, 0.0, //e
+      -0.4, -0.2, 0.0, //f 
+      -0.2, 0.0, 0.0, //g 
+
+      -0.4, -0.2, 0.0, //f 
+      -0.2, 0.0, 0.0, //g
+      -0.2, -0.2, 0.0, //h 
+
+      -0.2, 0.0, 0.0, //g
+      -0.2, -0.2, 0.0, //h
+      0.0, 0.0, 0.0, //i 
+
+      -0.2, -0.2, 0.0, //h
+      0.0, 0.0, 0.0, //i 
+      0.0, -0.2, 0.0, //j
+
+      0.0, 0.0, 0.0, //i 
+      0.0, -0.2, 0.0, //j
+      0.1, 0.1, 0.0, //k 
+
+      0.0, -0.2, 0.0, //j
+      0.1, 0.1, 0.0, //k 
+      0.1, -0.1, 0.0, //l  
+
+      0.1, 0.1, 0.0, //k 
+      0.1, -0.1, 0.0, //l
+      0.2, 0.2, 0.0, //m 
+
+      0.1, -0.1, 0.0, //l
+      0.2, 0.2, 0.0, //m
+      0.2, 0.0, 0.0, //n 
+
+      0.2, 0.2, 0.0, //m
+      0.2, 0.0, 0.0, //n
+      0.3, 0.3, 0.0, //o 
+
+      0.2, 0.0, 0.0, //n
+      0.3, 0.3, 0.0, //o 
+      0.3, 0.1, 0.0, //p 
+
+      0.3, 0.3, 0.0, //o 
+      0.3, 0.1, 0.0, //p
+      0.4, 0.4, 0.0, //q 
+
+      0.3, 0.1, 0.0, //p
+      0.4, 0.4, 0.0, //q
+      0.4, 0.2, 0.0, //r 
+
+      -0.8, 0.0, 0.0, //a or s
+      0.0, 0.0, 0.0, //i or u
+      0.0, 0.9, 0.0, //t
+
+      0.0, 0.0, 0.0, //i or u
+      0.0, 0.9, 0.0, //t 
+      0.4, 0.4, 0.0, //q or v
+
+      -0.4, 0.5, 0.0, 
+      -0.2, 0.5, 0.0,
+      -0.3, 0.7, 0.0,
+
+      -0.38, 0.5, 0.0,
+      -0.3, 0.5, 0.0,
+      -0.38, 0.3, 0.0,
+
+      -0.3, 0.5, 0.0,
+      -0.38, 0.3, 0.0,
+      -0.3, 0.3, 0.0,
+
+      -0.3, 0.5, 0.0,
+      -0.3, 0.3, 0.0,
+      -0.22, 0.5, 0.0,
+
+      -0.22, 0.5, 0.0,
+      -0.3, 0.3, 0.0,
+      -0.22, 0.3, 0.0
+
+    ]);
+
+
+    var a_coords_buffer = gl.createBuffer();
+    gl.bindBuffer(gl.ARRAY_BUFFER, a_coords_buffer);
+    gl.bufferData(gl.ARRAY_BUFFER, coords, gl.STATIC_DRAW);
+    gl.vertexAttribPointer(a_coords_location, 3, gl.FLOAT, false, 0, 0);
+    gl.enableVertexAttribArray(a_coords_location);
+
+    var u_shift_location = gl.getUniformLocation(prog, "u_shift");
+    var shift = 0.0;
+    gl.uniform1f(u_shift_location, shift);
+
+    var y_shift_location = gl.getUniformLocation(prog, "y_shift");
+    var yshift = 0.0;
+    gl.uniform1f(y_shift_location, yshift);
+
+    a_colors_location = gl.getAttribLocation(prog, "a_colors");
+    var clr = [];
+    for (let i = 1; i <= coords.length; i += 1) {
+        var r = Math.random();
+        var g = Math.random();
+        var b = Math.random();
+        clr.push(r, g, b);
+    }
+    var colors = new Float32Array(clr);
+
+    a_colors_buffer = gl.createBuffer();
+    gl.bindBuffer(gl.ARRAY_BUFFER, a_colors_buffer);
+    gl.bufferData(gl.ARRAY_BUFFER, colors, gl.STATIC_DRAW);
+    gl.vertexAttribPointer(a_colors_location, 3, gl.FLOAT, false, 0, 0);
+    gl.enableVertexAttribArray(a_colors_location);
+
+    gl.clearColor(0.0, 0.0, 0.0, 1.0);
+    gl.clear(gl.COLOR_BUFFER_BIT);
+    gl.drawArrays(gl.TRIANGLES, 0, coords.length);
+
+
+
+
+    function onKeyUp(event) {
+        if (event.key == 'a') {
+
+            shift = shift + 0.1;
+            gl.uniform1f(u_shift_location, shift);
+
+            gl.clearColor(0.0, 0.0, 0.0, 1.0);
+            gl.clear(gl.COLOR_BUFFER_BIT);
+            gl.drawArrays(gl.TRIANGLES, 0, coords.length);
+
+        } else if (event.key == 'b') {
+            shift = shift - 0.1;
+            gl.uniform1f(u_shift_location, shift);
+
+            gl.clearColor(0.0, 0.0, 0.0, 1.0);
+            gl.clear(gl.COLOR_BUFFER_BIT);
+            gl.drawArrays(gl.TRIANGLES, 0, coords.length);
+
+        } else if (event.key == 'c') {
+
+
+            var clr = [];
+            for (let i = 1; i <= coords.length; i += 1) {
+                var r = Math.random();
+                var g = Math.random();
+                var b = Math.random();
+                clr.push(r, g, b);
+            }
+            var colors = new Float32Array(clr);
+
+            a_colors_buffer = gl.createBuffer();
+            gl.bindBuffer(gl.ARRAY_BUFFER, a_colors_buffer);
+            gl.bufferData(gl.ARRAY_BUFFER, colors, gl.STATIC_DRAW);
+            gl.vertexAttribPointer(a_colors_location, 3, gl.FLOAT, false, 0, 0);
+            gl.enableVertexAttribArray(a_colors_location);
+
+            gl.clearColor(0.0, 0.0, 0.0, 1.0);
+            gl.clear(gl.COLOR_BUFFER_BIT);
+            gl.drawArrays(gl.TRIANGLES, 0, coords.length);
+
+        } else if (event.key == 'd') {
+
+
+            yshift = yshift - 0.1;
+            gl.uniform1f(y_shift_location, yshift);
+
+            gl.clearColor(0.0, 0.0, 0.0, 1.0);
+            gl.clear(gl.COLOR_BUFFER_BIT);
+            gl.drawArrays(gl.TRIANGLES, 0, coords.length);
+
+
+
+        } else if (event.key == 'u') {
+
+
+            yshift = yshift + 0.1;
+            gl.uniform1f(y_shift_location, yshift);
+
+            gl.clearColor(0.0, 0.0, 0.0, 1.0);
+            gl.clear(gl.COLOR_BUFFER_BIT);
+            gl.drawArrays(gl.TRIANGLES, 0, coords.length);
+
+
+
+        }
+
+    }
+</script>
+
+
+
+</html>
